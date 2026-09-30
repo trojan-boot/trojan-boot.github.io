@@ -12,7 +12,9 @@
       // index.html restores it before the router ever sees the URL.
       //
       // 0 path segments kept: this site is served at the domain root
-      // (trojan-boot.github.io), not a /project-name/ subpath.
+      // (trojan-boot.github.io), not a /project-name/ subpath. Only relevant
+      // on GitHub Pages — the self-hosted nginx deploy handles this itself
+      // (see nginx.conf's try_files) and never serves this file at all.
       var pathSegmentsToKeep = 0;
 
       var l = window.location;
