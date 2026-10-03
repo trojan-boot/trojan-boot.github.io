@@ -1,0 +1,3 @@
+# Single-page app: every path is served by index.html and the router takes it
+# from there. Without this a reload on /library is a 404 from Netlify.
+/*  /index.html  200
